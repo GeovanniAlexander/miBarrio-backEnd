@@ -17,4 +17,11 @@ public class CityRepositoryImpl implements ICityRepositoryService{
     public List<City> findAll() {
         return cityRepository.findAll();
     }
+
+    @Override
+    public List<City> findByDepartmentCode(String code) {
+        return cityRepository.findByDepartmentCode(code);
+    }
+
+
 }

@@ -9,12 +9,17 @@ import java.util.List;
 
 @Service
 @AllArgsConstructor
-public class UserServiceImpl implements ICityService{
+public class CityServiceImpl implements ICityService{
 
     private final ICityRepositoryService cityRepository;
 
     @Override
     public List<City> findAll() {
         return cityRepository.findAll();
+    }
+
+    @Override
+    public List<City> findByDepartmentCode(String code) {
+        return cityRepository.findByDepartmentCode(code);
     }
 }

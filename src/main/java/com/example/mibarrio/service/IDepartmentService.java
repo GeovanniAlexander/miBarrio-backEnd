@@ -1,10 +1,11 @@
 package com.example.mibarrio.service;
 
-import com.example.mibarrio.entity.Department;
+import com.example.mibarrio.api.DepartmentResponse;
+import com.example.mibarrio.entity.City;
 
 import java.util.List;
 
 public interface IDepartmentService {
 
-    List<Department> findAll();
+    List<DepartmentResponse> findAll();
 }

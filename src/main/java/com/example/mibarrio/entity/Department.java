@@ -18,6 +18,9 @@ public class Department {
     @Column(name = "id")
     private long id;
 
+    @Column(name = "code")
+    private String code;
+
     @Column(name = "name")
     private String name;
 
